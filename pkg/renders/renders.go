@@ -1,7 +1,26 @@
 package renders
 
-import "net/http"
+import (
+	"fmt"
+	"net/http"
+	"text/template"
+)
 
-func RenderTemplate(w http.ResponseWriter, r *http.Request) {
+func JustHtml(w http.ResponseWriter, html string) {
+	parsedTemplate, _ := template.ParseFiles("./static/" + html)
+	err := parsedTemplate.Execute(w, nil)
+	if err != nil {
+		fmt.Println("error parsing template", err)
+		return
+	}
 
+}
+
+func RenderTemplate(w http.ResponseWriter, tmpl string) {
+	parsedTemplate, _ := template.ParseFiles("./static/template/" + tmpl)
+	err := parsedTemplate.Execute(w, nil)
+	if err != nil {
+		fmt.Println("error parsing template", err)
+		return
+	}
 }
