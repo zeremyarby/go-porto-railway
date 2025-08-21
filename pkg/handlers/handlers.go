@@ -20,3 +20,11 @@ func Home(w http.ResponseWriter, r *http.Request) {
 func About(w http.ResponseWriter, r *http.Request) {
 	renders.JustHtml(w, "about.html")
 }
+
+func MyWork(w http.ResponseWriter, r *http.Request) {
+	renders.RenderTemplate(w, "mywork.page.tmpl")
+}
+
+func Contact(w http.ResponseWriter, r *http.Request) {
+	renders.RenderTemplate(w, "contact.page.tmpl")
+}
