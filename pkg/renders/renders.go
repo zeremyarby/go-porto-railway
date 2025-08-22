@@ -17,7 +17,7 @@ func JustHtml(w http.ResponseWriter, html string) {
 }
 
 func RenderTemplate(w http.ResponseWriter, tmpl string) {
-	parsedTemplate, _ := template.ParseFiles("./static/template/" + tmpl)
+	parsedTemplate, _ := template.ParseFiles("./static/template/"+tmpl, "./static/template/base.layout.tmpl")
 	err := parsedTemplate.Execute(w, nil)
 	if err != nil {
 		fmt.Println("error parsing template", err)
