@@ -13,6 +13,10 @@ func main() {
 	http.HandleFunc("/contact", handlers.Contact)
 	http.HandleFunc("/mywork", handlers.MyWork)
 
+	// Get Static Files
+	fileServer := http.FileServer(http.Dir("./static"))
+	http.Handle("/static/", http.StripPrefix("/static", fileServer))
+
 	fmt.Println("Starting application on port 8080")
 	http.ListenAndServe(":8080", nil)
 
