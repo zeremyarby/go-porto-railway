@@ -1,22 +1,44 @@
 {{template "base" .}}
 
-{{define "content"}}
-<div class="container">
-  <div class="row">
-    <div class="col">
-      <h1>This is the About page</h1>
-      <p>XD XD XD XD XD</p>
+{{define "css"}}
 
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
-      </p>
+{{end}}
+
+{{define "content"}}
+<div class="bg-gray-50 flex justify-center items-center">
+  <div class="w-full max-w-2xl text-center p-6">
+    <!-- Profile Illustration -->
+    <div class="flex justify-center">
+      <img src="/static/images/computer-man.png" alt="images" class="w-64 h-64"/>
+    </div>
+
+    <!-- Name & Description -->
+    <h1 class="text-xl font-semibold mt-4">Jeremmy Arby</h1>
+    <p class="text-gray-600 text-sm">
+      Lorem ipsum is placeholder <br />
+      text commonly used in the graphic, print
+    </p>
+
+    <!-- Buttons -->
+    <div class="flex justify-center gap-8 mt-6">
+      <button class="bg-sky-300 px-6 py-2 rounded-md shadow-[4px_4px_0px_#222] font-medium transition-all duration-150 active:shadow-[2px_2px_0px_#222] active:translate-y-0">
+        Lorem
+      </button>
+      <button class="bg-amber-400 px-6 py-2 rounded-md shadow-[4px_4px_0px_#222] font-medium">
+        Ipsum
+      </button>
+    </div>
+
+    <!-- Big Card -->
+    <div class="mt-8 bg-emerald-50 rounded-xl shadow-[10px_10px_0px_#222] h-9/10 w-full">
+      <p class="text-xl text-left px-6 py-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+        mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
     </div>
   </div>
 </div>
+
+
 {{ end }}
