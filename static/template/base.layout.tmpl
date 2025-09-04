@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jeremy Porto</title>
+    <link rel="icon" type="image/svg" href="/static/images/favicon.svg">
     {{block "css" .}}
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
@@ -19,9 +20,6 @@
   <body>
     <div class="navbar bg-amber-100 shadow-md rounded-sm min-h-2 border-b-2 border-amber-400">
       <div class="flex-none">
-        <!-- <button class="btn btn-square btn-ghost">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block h-5 w-5 stroke-current"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path> </svg>
-        </button> -->
 
         <div class="drawer">
           <input id="my-drawer" type="checkbox" class="drawer-toggle" />
@@ -59,25 +57,33 @@
                 <img src="/static/images/sidebar-img.png" alt="sidebar-image" class="w-25 h-25">
               </div>
               <h2 class=" flex justify-center font-mono text-xl">Here's how to reach me!</h3>
+
               <div class="py-4">
-                <li class="justify-start py-2"><a><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="33" height="33" viewBox="0 0 50 50">
-                  <path d="M 12 3 C 7.04 3 3 7.04 3 12 L 3 38 C 3 42.96 7.04 47 12 47 L 38 47 C 42.96 47 47 42.96 47 38 L 47 12 C 47 7.04 42.96 3 38 3 L 12 3 z M 38 8 L 41 8 C 41.55 8 42 8.45 42 9 L 42 12 C 42 12.55 41.55 13 41 13 L 38 13 C 37.45 13 37 12.55 37 12 L 37 9 C 37 8.45 37.45 8 38 8 z M 25 10 C 30.33 10 35.019688 12.8 37.679688 17 L 42 17 L 42 37 C 42 39.76 39.76 42 37 42 L 13 42 C 10.24 42 8 39.76 8 37 L 8 17 L 12.320312 17 C 14.980313 12.8 19.67 10 25 10 z M 25 12 C 17.83 12 12 17.83 12 25 C 12 32.17 17.83 38 25 38 C 32.17 38 38 32.17 38 25 C 38 17.83 32.17 12 25 12 z M 25 16 C 29.96 16 34 20.04 34 25 C 34 29.96 29.96 34 25 34 C 20.04 34 16 29.96 16 25 C 16 20.04 20.04 16 25 16 z"></path>
-              </svg>My Instagram</a>
+                <li class="justify-start py-2"><a href="https://www.instagram.com/zeremyarby/" target="_blank" rel="noopener noreferrer">
+                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="33" height="33" viewBox="0 0 50 50">
+                    <path d="M 12 3 C 7.04 3 3 7.04 3 12 L 3 38 C 3 42.96 7.04 47 12 47 L 38 47 C 42.96 47 47 42.96 47 38 L 47 12 C 47 7.04 42.96 3 38 3 L 12 3 z M 38 8 L 41 8 C 41.55 8 42 8.45 42 9 L 42 12 C 42 12.55 41.55 13 41 13 L 38 13 C 37.45 13 37 12.55 37 12 L 37 9 C 37 8.45 37.45 8 38 8 z M 25 10 C 30.33 10 35.019688 12.8 37.679688 17 L 42 17 L 42 37 C 42 39.76 39.76 42 37 42 L 13 42 C 10.24 42 8 39.76 8 37 L 8 17 L 12.320312 17 C 14.980313 12.8 19.67 10 25 10 z M 25 12 C 17.83 12 12 17.83 12 25 C 12 32.17 17.83 38 25 38 C 32.17 38 38 32.17 38 25 C 38 17.83 32.17 12 25 12 z M 25 16 C 29.96 16 34 20.04 34 25 C 34 29.96 29.96 34 25 34 C 20.04 34 16 29.96 16 25 C 16 20.04 20.04 16 25 16 z"></path>
+                  </svg> My Instagram</a>
                 </li>
-                <li class="justify-start py-2"><a><svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline>
+
+                <li class="justify-start py-2"><a href="mailto:zeremyarby@gmail.com?subject=Halo Jeremy&body=Dear Jeremmy, " target="_blank" rel="noopener noreferrer">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline>
                   </svg>My Email</a>
                 </li>
-                <li class="justify-start py-2"><a><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="33" height="33" viewBox="0 0 50 50">
-                  <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
+
+                <li class="justify-start py-2"><a href="https://www.linkedin.com/in/jeremmy-arby-3a5407165/" target="_blank" rel="noopener noreferrer">
+                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="33" height="33" viewBox="0 0 50 50">
+                    <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
                   </svg>My LinkedIn</a>
                 </li>
+
               </div>
             </ul>
           </div>
         </div>
       </div>
       <div class="flex-1 text-right">
-        <a class="btn btn-ghost text-xl">Portofolio</a>
+        <a href="." class="btn btn-ghost text-xl">Portofolio</a>
       </div>
       <div class="dropdown dropdown-end">
         <button class="btn btn-square btn-ghost">
@@ -97,9 +103,9 @@
         </button>
           <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
             <li><a>Home</a></li>
-            <li><a>About 2</a></li>
+            <li><a>About</a></li>
             <li><a>Contact</a></li>
-            <li><a>Mywork 2</a></li>
+            <li><a>My Blog</a></li>
           </ul>
       </div>
     </div>
@@ -121,8 +127,8 @@
           <div class="mb-4">
             <a href="#" class="text-lg font-mono underline hover:no-underline block mb-1">My Work</a>
             <a href="#" class="text-lg font-mono underline hover:no-underline block mb-1">Contact</a>
-            <a href="#" class="text-lg font-mono underline hover:no-underline block mb-1">About</a>
-            <a href="#" class="text-lg font-mono underline hover:no-underline block mb-1">Home</a>
+            <a href="" class="text-lg font-mono underline hover:no-underline block mb-1">About</a>
+            <a href="." class="text-lg font-mono underline hover:no-underline block mb-1">Home</a>
           </div>
 
           <!-- Social media icons -->
