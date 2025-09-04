@@ -11,7 +11,7 @@ func main() {
 	http.HandleFunc("/", handlers.Home)
 	http.HandleFunc("/about", handlers.About)
 	http.HandleFunc("/contact", handlers.Contact)
-	http.HandleFunc("/mywork", handlers.MyWork)
+	http.HandleFunc("/myblog", handlers.MyBlog)
 
 	// Get Static Files
 	fileServer := http.FileServer(http.Dir("./static"))
