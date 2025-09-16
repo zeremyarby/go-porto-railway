@@ -7,6 +7,8 @@ import (
 	"github.com/zeremyarby/go-porto/pkg/handlers"
 )
 
+const portNumber = ":8080"
+
 func main() {
 	http.HandleFunc("/", handlers.Home)
 	http.HandleFunc("/about", handlers.About)
@@ -18,6 +20,6 @@ func main() {
 	http.Handle("/static/", http.StripPrefix("/static", fileServer))
 
 	fmt.Println("Starting application on port 8080")
-	http.ListenAndServe(":8080", nil)
+	http.ListenAndServe(portNumber, nil)
 
 }
